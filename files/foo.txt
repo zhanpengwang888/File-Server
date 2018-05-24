@@ -1,0 +1,10 @@
+this is a file
+the name of the file is foo
+
+it has some bytes here.
+
+You can see them in plain text right now
+
+This should be a pretty easy file to serve up.
+
+Especially since it is basically just a bunch of ascii bytes.

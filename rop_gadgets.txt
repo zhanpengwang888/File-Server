@@ -1,0 +1,44 @@
+Gadget 1:
+Start address: 0x00007f89cb1f6000
+End address: 0x00007f89cb33a579
+Gadget operations:
+popq %rax;
+retq
+
+Gadget 2:
+Start address: 0x00007f89cb1f6000
+End address: 0x00007f89cb32a027
+Gadget operations:
+popq %rdi;
+retq
+
+Gadget 3:
+Start address: 0x00007f89cb1f6000
+End address: 0x00007F89CB329643
+Gadget operations:
+popq %rsi;
+retq
+
+Gadget 4:
+Start address: 0x00007f89cb1f6000
+End address: 0x00007F89CB1FD062
+Gadget operations:
+popq %rdx;
+retq
+
+Gadget 5:
+Start address: 0x00007f89cb1f6000
+End address: 0x00007F89CB1FB096
+Gadget operations:
+syscall
+
+weave them together, and we get:
+popq %rax;
+retq 
+popq %rdi;
+retq
+popq %rsi;
+retq
+popq %rdx;
+retq
+syscall
